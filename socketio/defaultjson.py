@@ -1,6 +1,6 @@
 ### default json loaders
 try:
-    import simplejson as json
+    import bson.json_util as json
     json_decimal_args = {"use_decimal": True}  # pragma: no cover
 except ImportError:
     import json
